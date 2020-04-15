@@ -40,7 +40,7 @@ app.use("/api",categoryRoutes)
 app.use("/api", productRoutes)
 app.use("/api",orderRoutes)
 //port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 //server
 app.listen(port,() => {
     console.log(`app is running at ${port}`);
