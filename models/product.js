@@ -17,6 +17,10 @@ const productSchema = new mongoose.Schema({
         type:String,
         trim:true
     },
+breed:{
+type:String,
+trim:true
+},
     price: {
         type: Number,
         required: true,
