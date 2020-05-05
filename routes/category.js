@@ -9,7 +9,7 @@ const {
   updateCategory,
   removeCategory
 } = require("../controllers/category");
-const { isSignedIn, isAdmin, isAuthenticated } = require("../controllers/authentication");
+const { isSignedIn, isAdmin, isAuthenticated } = require("../controllers/auth");
 const { getUserById } = require("../controllers/user");
 
 //params
@@ -49,7 +49,5 @@ router.delete(
   isAdmin,
   removeCategory
 );
-
-
 
 module.exports = router;
